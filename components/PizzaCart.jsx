@@ -1,17 +1,16 @@
 import Image from "next/image"
 import styles from "../styles/PizzaCart.module.css"
+import Link from "next/link"
 
-const PizzaCart = () => {
+const PizzaCart = ({ pizza }) => {
   return (
     <div className={styles.container}>
-      <Image src="/img/pizza2.jpg" alt="pizza" width="500" height="500" />
-      <h1 className={styles.title}>FIORI DE ZUCCA</h1>
-      <span className={styles.price}>$19.90</span>
-      <p className={styles.desc}>
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolor
-      </p>
+      <Link href={`/product/${pizza._id}`} passHref>
+        <Image src={pizza.img} alt="pizza" width="500" height="500" />
+      </Link>
+      <h1 className={styles.title}>{pizza.title}</h1>
+      <span className={styles.price}>${pizza.prices[0]}</span>
+      <p className={styles.desc}>{pizza.desc}</p>
     </div>
   )
 }

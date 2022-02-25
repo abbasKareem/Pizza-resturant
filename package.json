@@ -9,9 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@paypal/react-paypal-js": "^7.6.0",
+    "@reduxjs/toolkit": "^1.7.2",
+    "axios": "^0.26.0",
+    "mongoose": "^6.2.3",
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2"
   },
   "devDependencies": {
     "eslint": "8.9.0",

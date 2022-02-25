@@ -134,6 +134,10 @@
     padding: 10px 20px;
   }
 
+  .qunatity {
+    width: 80px;
+  }
+
   .price {
     margin-top: 20px;
     color: #d1411e;
