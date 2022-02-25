@@ -20,7 +20,7 @@ const OrderDetail = ({ total, createOrder }) => {
             placeholder="Jhon Doe"
             type="text"
             className={styles.input}
-            onChange={(e) => setPhone(e.target.value)}
+            onChange={(e) => setCustomer(e.target.value)}
           />
         </div>
         <div className={styles.item}>
@@ -29,7 +29,7 @@ const OrderDetail = ({ total, createOrder }) => {
             placeholder="0783493383"
             type="text"
             className={styles.input}
-            onChange={(e) => setCustomer(e.target.value)}
+            onChange={(e) => setPhone(e.target.value)}
           />
         </div>
         <div className={styles.item}>
